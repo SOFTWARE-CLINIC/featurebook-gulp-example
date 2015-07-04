@@ -1,0 +1,9 @@
+{
+  "title": "FeatureBook Gulp Example",
+  "version": "0.0.1",
+  "authors": [{
+    "firstName": "Cucumber",
+    "lastName": "Ninja",
+    "email": "cucumber.ninja@software-clinic.com"
+  }]
+}

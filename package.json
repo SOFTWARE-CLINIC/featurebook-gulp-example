@@ -1,0 +1,19 @@
+{
+  "name": "featurebook-gulp-example",
+  "version": "0.0.1",
+  "description": "An example FeatureBook integration into Gulp-based build.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SOFTWARE-CLINIC/featurebook-gulp-example"
+  },
+  "bugs": {
+    "url": "https://github.com/SOFTWARE-CLINIC/featurebook-gulp-example/issues"
+  },
+  "devDependencies": {
+    "featurebook": "0.0.17",
+    "gulp": "^3.9.0"
+  },
+  "scripts": {
+    "test": "gulp spec-build"
+  }
+}
