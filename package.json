@@ -10,7 +10,8 @@
     "url": "https://github.com/SOFTWARE-CLINIC/featurebook-gulp-example/issues"
   },
   "devDependencies": {
-    "featurebook": "0.0.17",
+    "del": "^1.2.0",
+    "featurebook": "0.0.20",
     "gulp": "^3.9.0"
   },
   "scripts": {

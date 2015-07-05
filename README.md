@@ -15,10 +15,11 @@ var gulp = require('gulp');
 var featurebook = require('featurebook');
 
 gulp.task('spec-build', function(done) {
-  featurebook.build({
-    sourceDir: __dirname + '/features',
-    format: ['html', 'pdf']
-  });
+  featurebook.build(
+    __dirname + '/features',
+    'pdf',
+    __dirname + '/dist'
+  );
   done();
 });
 ```
