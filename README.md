@@ -5,16 +5,16 @@ FeatureBook Gulp Example
 [![devDependencies](https://david-dm.org/SOFTWARE-CLINIC/featurebook-gulp-example/dev-status.svg)](https://david-dm.org/SOFTWARE-CLINIC/featurebook-gulp-example#info=devDependencies)
 
 An example [FeatureBook](https://github.com/SOFTWARE-CLINIC/featurebook)
-integration into [Gulp](http://gulpjs.com)-based build.
+integration into a [Gulp](http://gulpjs.com)-based build.
 
-You don't need any Gulp plugins to run FeatureBook commands from the Gulp-based
+You do **not** need any Gulp plugin to run FeatureBook commands from a Gulp-based
 build, use FeatureBook directly.
 
 ```javascript
 var gulp = require('gulp');
 var featurebook = require('featurebook');
 
-gulp.task('spec-build', function(done) {
+gulp.task('spec:build', function(done) {
   featurebook.build(
     __dirname + '/features',
     'pdf',
@@ -23,3 +23,8 @@ gulp.task('spec-build', function(done) {
   done();
 });
 ```
+
+This project illustrates two usage scenarios:
+
+* `gulp spec:build` - a task that builds a PDF specification document; typically run on a CI server
+* `gulp spec:serve` - a task that serves the [features](./features) directory as a system specification
