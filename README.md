@@ -8,7 +8,7 @@ An example [FeatureBook](https://github.com/SOFTWARE-CLINIC/featurebook)
 integration into a [Gulp](http://gulpjs.com)-based build.
 
 You do **not** need any Gulp plugin to run FeatureBook commands from a Gulp-based
-build, use FeatureBook directly.
+build, use FeatureBook's [public API](https://github.com/SOFTWARE-CLINIC/featurebook/wiki/Public-API) directly.
 
 ```javascript
 var gulp = require('gulp');
