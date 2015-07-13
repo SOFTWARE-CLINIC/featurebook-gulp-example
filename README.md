@@ -10,15 +10,15 @@ integration into a [Gulp](http://gulpjs.com)-based build.
 You do **not** need any Gulp plugin to run FeatureBook commands from a Gulp-based
 build, use FeatureBook directly.
 
-```javascript
+```js
 var gulp = require('gulp');
-var featurebook = require('featurebook');
+var featurebook = require('featurebook').commands;
 
 gulp.task('spec:build', function(done) {
   featurebook.build(
-    __dirname + '/features',
+    'features',
     'pdf',
-    __dirname + '/dist'
+    'dist'
   );
   done();
 });

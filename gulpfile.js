@@ -1,10 +1,11 @@
 var gulp = require('gulp');
-var featurebook = require('featurebook');
+var featurebook = require('featurebook').commands;
+var path = require('path');
 var del = require('del');
 
 gulp.task('default', ['spec:build']);
 
-gulp.task('clean:spec', function(done) {
+gulp.task('spec:clean', function(done) {
   del([
     'dist'
   ], done);
@@ -12,16 +13,16 @@ gulp.task('clean:spec', function(done) {
 
 gulp.task('spec:build', function(done) {
   featurebook.build(
-    __dirname + '/features',
+    'features',
     'pdf',
-    __dirname + '/dist'
+    'dist'
   );
   done();
 });
 
 gulp.task('spec:serve', function(done) {
   featurebook.serve(
-    __dirname + '/features',
+    'features',
     3000
   );
   done();

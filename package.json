@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "del": "^1.2.0",
-    "featurebook": "0.0.20",
+    "featurebook": "0.0.22",
     "gulp": "^3.9.0"
   },
   "scripts": {
