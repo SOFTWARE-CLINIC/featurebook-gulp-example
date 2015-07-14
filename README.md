@@ -26,5 +26,5 @@ gulp.task('spec:build', function(done) {
 
 This project illustrates two usage scenarios:
 
-* `gulp spec:build` - a task that builds a PDF specification document; typically run on a CI server
+* `gulp spec:build` - a task that builds a [PDF document](./README/specification.pdf); typically run on a CI server
 * `gulp spec:serve` - a task that serves the [features](./features) directory as a system specification
