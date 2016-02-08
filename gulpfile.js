@@ -1,26 +1,32 @@
 var gulp = require('gulp');
 var featurebook = require('featurebook').commands;
-var path = require('path');
 var del = require('del');
 
-gulp.task('default', ['spec:build']);
+gulp.task('default', ['spec:pdf', 'spec:html']);
 
-gulp.task('spec:clean', function(done) {
+gulp.task('spec:clean', function (done) {
   del([
     'dist'
   ], done);
 });
 
-gulp.task('spec:build', function(done) {
-  featurebook.build(
+gulp.task('spec:pdf', function (done) {
+  featurebook.pdf(
     'features',
-    'pdf',
     'dist'
   );
   done();
 });
 
-gulp.task('spec:serve', function(done) {
+gulp.task('spec:html', function (done) {
+  featurebook.html(
+    'features',
+    'dist'
+  );
+  done();
+});
+
+gulp.task('spec:serve', function (done) {
   featurebook.serve(
     'features',
     3000

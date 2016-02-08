@@ -2,7 +2,7 @@
   "name": "featurebook-gulp-example",
   "version": "0.0.1",
   "description": "An example FeatureBook integration into Gulp-based build.",
-  "license": "Apache 2",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/SOFTWARE-CLINIC/featurebook-gulp-example"
@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "del": "^2.0.2",
-    "featurebook": "0.0.24",
+    "featurebook": "0.0.25",
     "gulp": "^3.9.0"
   },
   "scripts": {
