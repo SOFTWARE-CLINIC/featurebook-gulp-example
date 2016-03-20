@@ -15,7 +15,7 @@ var featurebook = require('featurebook').commands;
 gulp.task('spec:pdf', function(done) {
   featurebook.pdf(
     'features',
-    'dist'
+    'dist/pdf'
   );
   done();
 });

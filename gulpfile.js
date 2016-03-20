@@ -15,7 +15,7 @@ gulp.task('spec:build', ['spec:pdf', 'spec:html']);
 gulp.task('spec:pdf', function (done) {
   featurebook.pdf(
     'features',
-    'dist'
+    'dist/pdf'
   );
   done();
 });
@@ -23,7 +23,7 @@ gulp.task('spec:pdf', function (done) {
 gulp.task('spec:html', function (done) {
   featurebook.html(
     'features',
-    'dist'
+    'dist/html'
   );
   done();
 });
