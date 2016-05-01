@@ -1,5 +1,9 @@
+'use strict';
+
 var gulp = require('gulp');
-var featurebook = require('featurebook').commands;
+var featurebookPdf = require('featurebook-pdf');
+var featurebookHtml = require('featurebook-html');
+var featurebookServe = require('featurebook-serve');
 var del = require('del');
 
 gulp.task('default', ['spec:build']);
@@ -13,7 +17,7 @@ gulp.task('spec:clean', function (done) {
 gulp.task('spec:build', ['spec:pdf', 'spec:html']);
 
 gulp.task('spec:pdf', function (done) {
-  featurebook.pdf(
+  featurebookPdf(
     'features',
     'dist/pdf'
   );
@@ -21,7 +25,7 @@ gulp.task('spec:pdf', function (done) {
 });
 
 gulp.task('spec:html', function (done) {
-  featurebook.html(
+  featurebookHtml(
     'features',
     'dist/html'
   );
@@ -29,7 +33,7 @@ gulp.task('spec:html', function (done) {
 });
 
 gulp.task('spec:serve', function (done) {
-  featurebook.serve(
+  featurebookServe(
     'features',
     3000
   );
